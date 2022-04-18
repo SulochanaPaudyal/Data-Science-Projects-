@@ -1,0 +1,6 @@
+
+#if you see a first then true, best case senario #doesn't matter how long is list 
+#worst case: must search entire list and not find it 
+#linear relationship 
+#evalaute the efficiency when Input grows: Size of input grows, how much time its going to take 
+#constant time (finding element in the array,), linear relationship, quadratic, exponential, V*E (vetices *Edges)
