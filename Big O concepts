@@ -10,3 +10,22 @@ search_for_list(List, "d")
 #linear relationship 
 #evalaute the efficiency when Input grows: Size of input grows, how much time its going to take 
 #constant time (finding element in the array,), linear relationship, quadratic, exponential, V*E (vetices *Edges)
+
+
+
+def fact_iter(n):
+    ans=1
+    while n>1:
+        ans *=n # 1 step ans=ans*n 
+        n-=1
+    return ans
+fact_iter(3)
+
+#Computes factorial 
+#worst case asymtotic complexity: O(n) double the size of n, number of step is double, ...
+
+#n^2 +2n + 2   O(n^2)
+#n^2 + 10000n + 3^1000 == O(n^2)
+#log(n) + n + 4 == O(n) n grows faster than log n 
+#0.0001*n*log(n) + 300n == O(nlog n)
+#2n^30 + 3^n == O(3^n) exponential are much painful than other 
