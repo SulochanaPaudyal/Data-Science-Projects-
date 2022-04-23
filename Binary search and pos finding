@@ -1,0 +1,32 @@
+# sorted_input_array = [3, 5, 6, 8, 10, 12, 18, 26, 33, 54, 56, 60, 80, 88, 90]
+# def find_x(sorted_input_array, x)
+#midpoint_array= (0+len(array))/2
+ #   i=0
+  #  if x = mid : print midpoint index value
+  #  define left and right
+  #  Recursion 
+  #  find_x(left, x); 
+    #return 
+
+
+
+
+
+
+
+def find_x(sorted_input_array, x, li, ui):
+    mid_index = int((0 + len(sorted_input_array))/2)
+    if sorted_input_array[mid_index]==x:
+        print('you find your value: ' + str(x) + ' at position ' + str(int((li+ui)/2)))
+    elif x < sorted_input_array[mid_index]:
+        left= sorted_input_array[:mid_index]
+        find_x(left, x, li, int((li+ui)/2))
+    elif x > sorted_input_array[mid_index]:
+        right= sorted_input_array[mid_index:]
+        find_x(right, x, int((li+ui)/2), ui)
+
+
+
+a = [3, 5, 6, 8, 10, 12, 13, 17, 19, 21, 22, 25, 30]   
+find_x(a, 25, 0, len(a))
+    
